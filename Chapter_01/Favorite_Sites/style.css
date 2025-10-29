@@ -1,0 +1,14 @@
+/* style.css */
+
+article {
+    width: 60%;
+    text-align: left;
+    margin: 10px;
+    border: 2px green double;
+    padding: 2px;
+    display: block;
+}
+
+img {
+    display: block;
+}

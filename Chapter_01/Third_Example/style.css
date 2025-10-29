@@ -1,0 +1,22 @@
+/* style.css */
+
+body {
+    background-color: tan;
+    color: #EE1055;
+    text-align: center;
+    font-size: 22px;
+}
+
+section {
+    width: 85%;
+    border: 4px #00FF63 solid;
+    text-align: left;
+    padding: 5px;
+    margin: 10px;
+    background-color: white;
+}
+
+p {
+    margin: 5px;
+    padding: 5px;
+}
