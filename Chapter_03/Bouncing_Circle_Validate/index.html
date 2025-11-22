@@ -1,0 +1,33 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Bouncing Ball with inputs</title>
+</head>
+
+<body>
+    <main>
+        <section class="container">
+            <canvas id="canvas" width="400" height="300"></canvas>
+            <br>
+            <form name="f" id="f" onSubmit="return change();">
+                <label>Horizontal velocity
+                    <input name="hv" id="hv" value="4" type="number" min="-10" max="10">
+                </label><br>
+                <label>Vertical velocity
+                    <input name="vv" id="vv" value="8" type="number" min="-10" max="10">
+                </label><br>
+                <input type="submit" value="CHANGE">
+            </form>
+        </section>
+    </main>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Bouncing cotton candy!</title>
+</head>
+
+<body onLoad="init();">
+    <main>
+        <section class="container">
+            <p>
+                Click STOP to stop the cotton candy moving to get it near Panda Annika.
+            </p>
+            <p>
+                You can click RESUME to have the candy start moving again.
+                You can change the velocities.
+            </p><br>
+            <canvas id="canvas" width="400" height="300"></canvas>
+            <br>
+            <form name="f" id="f" onSubmit="return change();">
+                <label>Horizontal velocity
+                    <input name="hv" id="hv" value="4" type="number" min="0" max="10">
+                </label><br>
+                <label>Vertical velocity
+                    <input name="vv" id="vv" value="8" type="number" min="0" max="10">
+                </label><br>
+                <input type="submit" value="CHANGE">
+                <button onClick="return stop();">STOP </button>
+                <button onClick="return resume();">RESUME </button>
+            </form>
+            <img src="./images/candy.png">
+            <img src="./images/reunion.jpg">
+        </section>
+    </main>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
