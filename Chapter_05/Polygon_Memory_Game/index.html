@@ -1,0 +1,27 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Polygon Memory Game</title>
+</head>
+
+<body onLoad="init();">
+    <h1>Polygon Memory Game</h1>
+    <canvas id="canvas"></canvas><br>
+    <h4>Click on two cards to see if you have a match.</h4>
+    <form name="f">
+        Number of matches: <input type="text" name="count" value="0" size="1" />
+        <p>
+            Time taken to complete puzzle: <input type="text" name="elapsed" value="  " size="4" /> seconds.
+        </p>
+    </form>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
+
