@@ -1,0 +1,28 @@
+<!-- index.htmln -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Load Saved Maze</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="900" height="350"></canvas>
+    <p>Choose level and click GET MAZE button to get a maze:</p>
+    <form name="gf" onSubmit="return getwalls()">
+        <input type="radio" value="hard" name="level">Hard<br>
+        <input type="radio" value="moderate" name="level">Moderate<br>
+        <input type="radio" value="easy" name="level">Easy<br>
+        <input type="submit" value="GET maze">
+    </form>
+    <p>Use arrow keys to move token.</p>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
+

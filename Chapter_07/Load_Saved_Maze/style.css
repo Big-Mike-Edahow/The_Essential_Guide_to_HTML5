@@ -1,0 +1,38 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 12pt;
+}
+
+body {
+    background-color: lightblue;
+}
+
+canvas {
+    background-color: ghostwhite;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+    box-sizing: content-box;
+}
+
+input[type="submit"] {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 3px 5px;
+    padding: 3px 5px;
+    background-color: rgb(188, 208, 228);
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+
+input[type="submit"]:active {
+    box-shadow: inset 2px 2px 2px black;
+}

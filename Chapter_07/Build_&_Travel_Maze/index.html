@@ -1,0 +1,38 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./favicon.ico" type="image/png" rel="shortcut icon">
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <title>Build & Travel Maze</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="900" height="350"></canvas><br>
+    <p>Press mouse button down, drag and release to make a wall.
+    Use arrow keys to move token.</p>
+    <p>Pressing any other key will stop key capture and allow you
+        to save the maze locally.</p>
+    <form name="sf" onSubmit="return savewalls()">
+        <p>To save your maze, enter in a name and click on the SAVE WALLS button.</p>
+        <label>Name:
+            <input name="slname" value="maze_name" type="text">
+        </label>
+        <input type="submit" value="SAVE WALLS">
+    </form>
+    <form name="gf" onSubmit="return getwalls()">
+        <p>To add old walls, enter in the name and click on the GET SAVED WALLS button.</p>
+        <label>Name:
+            <input name="glname" value="maze_name" type="text">
+        </label>
+        <input type="submit" value="GET SAVED WALLS">
+    </form>
+    <script src="./script.js" type="text/javascript"></script>
+</body>
+
+</html>
+

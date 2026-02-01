@@ -1,0 +1,64 @@
+/* style.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 12pt;
+}
+
+body {
+    background-color: lightgreen;
+}
+
+main {
+    margin-top: 50px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+h1 {
+    display: inline-flex;
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    background-color: ghostwhite;
+    border: none;
+    border-radius: 5px;
+}
+
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 3px 5px;
+    padding: 3px 5px;
+    background-color: rgb(188, 208, 228);
+    border: 2px solid black;
+    border-radius: 3px;
+    box-shadow: 2px 2px 2px black;
+}
+
+button:active {
+    box-shadow: inset 2px 2px 2px black;
+}
